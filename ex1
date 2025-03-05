@@ -1,0 +1,67 @@
+1)package exercicios;
+
+public class Exercicio {
+    public static void main(String[] args)      
+      Produto p1 = new Produto("bolacha",2.54);
+      Produto p2 = new Produto("cerveja");
+      Produto p3 = new Produto();
+           p1.Exibir();    
+     p1.setNome();
+     p1.setPreco(2.53);
+     p1.Exibir();
+                                 
+    }
+    
+}
+
+
+
+
+
+
+
+package exercicios;
+
+public class Produto {
+ 
+private String Nome;
+private double Preco;
+
+
+public Produto(){
+    
+}
+
+public Produto(String Nome){
+     this.Nome = Nome;
+             
+  }
+public Produto(String Nome,double preco){
+this.Nome = Nome;
+this.Preco = preco;
+
+}
+
+
+ public void Exibir(){
+    System.out.println("Nome:" + Nome);
+    System.out.println("Preço:" + Preco);
+}
+ public String getNome(){
+  return this.Nome;
+  
+  }
+ 
+ public void setNome(){
+   this.Nome = Nome;
+ }
+ 
+  public double getPreco(){
+  return this.Preco;
+  
+ }
+public void setPreco(double Preco){
+     this.Preco = Preco;
+  
+ }
+}
